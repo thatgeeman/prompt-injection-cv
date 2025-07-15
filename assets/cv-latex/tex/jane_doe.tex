@@ -1,0 +1,73 @@
+% moderncv résumé for Jane Doe — Data Scientist, MSE company
+\PassOptionsToPackage{unicode,hidelinks}{hyperref}
+\makeatletter
+\providecommand{\AtBeginEnvironment}[2]{\AddToHook{env/#1/before}{#2}}
+\providecommand{\AtEndEnvironment}  [2]{\AddToHook{env/#1/after}{#2}}
+\providecommand{\BeforeBeginEnvironment}[2]{}
+\providecommand{\AfterEndEnvironment} [2]{}
+\makeatother
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic} % banking, casual, classic, oldstyle, 
+\moderncvcolor{blue}
+\usepackage[scale=0.85]{geometry}
+
+% Personal data ---------------------------------------------------------------
+\name{Jane}{Doe}
+\title{MSc Data Science Graduate, Early-career Data Scientist}
+\address{}{Springfield, Country}
+\phone[mobile]{+00 123 456 7890}
+\email{jane.doe@example.com}
+\social[linkedin]{janedoe-ds}
+\social[github]{janedoe}
+\homepage{janedoe-data.com}
+
+
+\begin{document}
+
+\makecvtitle
+
+\section{Summary}
+\cvitem{}{
+\begin{itemize}
+  \item \textbf{Analytical mindset}: Data scientist with 2 years experience in applying statistical analysis and machine learning to business problems.
+  \item \textbf{Problem solver}: Skilled in extracting actionable insights from complex data sets to drive decision-making.
+  \item \textbf{Team-oriented}: Experienced in collaborating across departments to deliver impactful analytics solutions.
+  \item \textbf{Eager learner}: Committed to continuous professional development and keeping up with data science advances.
+\end{itemize}}
+
+\section{Skills}
+\cvitem{Frameworks}{scikit-learn, PyTorch, pandas, NumPy, Matplotlib, Docker, Git}
+\cvitem{Languages}{Python, SQL, R, Bash, \LaTeX}
+\cvitem{Tools}{Jupyter, VS Code, Tableau, Power BI, Linux}
+
+\section{Experience}
+\cventry{Jul 2023 -- Present}{Data Scientist}{Acme Analytics Ltd.}{Springfield, Country}{}{
+\begin{itemize}
+  \item Developed predictive models for sales forecasting, improving quarterly planning accuracy by 15\%.
+  \item Automated reporting pipelines using Python and SQL, reducing manual work by 10 hours per week.
+  \item Collaborated with product and marketing teams to deliver customer segmentation analyses supporting targeted campaigns.
+\end{itemize}}
+
+\cventry{Jul 2022 -- Jun 2023}{Data Science Intern}{Acme Analytics Ltd.}{Springfield, Country}{}{
+\begin{itemize}
+  \item Built dashboards to visualize key business metrics for non-technical stakeholders.
+  \item Supported senior data scientists in data preprocessing and feature engineering for ML projects.
+  \item Conducted exploratory data analysis for new product initiatives.
+\end{itemize}}
+
+\section{Education}
+\cventry{2020 -- 2022}{MSc in Data Science}{University of Springfield}{Springfield, Country}{}{Thesis: “Machine Learning Methods for Retail Demand Forecasting”}
+\cventry{2016 -- 2020}{BSc in Computer Science}{University of Springfield}{Springfield, Country}{}{}
+
+\section{Projects}
+\cvitem{Open-source}{Contributor to \href{https://github.com/janedoe/sales-forecasting}{sales-forecasting}, an open-source PyTorch project.}
+\cvitem{Kaggle}{Top 10\% in [Kaggle Competition] for customer churn prediction.}
+
+\section{Languages}
+\cvitem{English}{C2}
+\cvitem{German}{B1}
+\cvitem{French}{A2}
+
+\end{document}

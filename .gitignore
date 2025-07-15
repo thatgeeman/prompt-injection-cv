@@ -1,3 +1,14 @@
+# tex related files
+**/*.aux
+**/*.bbl
+**/*.blg
+**/*.log
+**/*.out
+**/*.gz
+
+# ignore symbolic links on linux 
+**/*.symlink
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
