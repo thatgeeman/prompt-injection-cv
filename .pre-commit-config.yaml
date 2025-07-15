@@ -1,0 +1,8 @@
+repos:
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.8.1 # or latest stable version
+    hooks:
+      - id: nbstripout
+        name: Strip notebook outputs
+        files: \.ipynb$
+        stages: [pre-commit]
