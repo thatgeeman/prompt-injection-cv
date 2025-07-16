@@ -1,7 +1,7 @@
 PWD /home/gg/prompt-injection-cv/assets/cv-latex/tex
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/gg/prompt-injection-cv/assets/cv-latex/tex/jane_doe_extra.tex
+INPUT jane_doe_extra.tex
 OUTPUT jane_doe_extra.log
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT ./moderncv.cls
