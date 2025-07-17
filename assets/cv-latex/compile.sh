@@ -4,6 +4,8 @@
 cd tex/ || exit 1
 
 for TEXFILE in {avery_taylor,alex_smith,jane_doe}; do
+
+    rm -f "${TEXFILE}.aux" "${TEXFILE}.bbl" "${TEXFILE}.blg" "${TEXFILE}.log" "${TEXFILE}.out" "${TEXFILE}.toc" "${TEXFILE}_extra.aux" "${TEXFILE}_extra.bbl" "${TEXFILE}_extra.blg" "${TEXFILE}_extra.log" "${TEXFILE}_extra.out" "${TEXFILE}_extra.toc"
     pdflatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder "${TEXFILE}.tex"
     pdflatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder "${TEXFILE}.tex"
     

@@ -31,7 +31,15 @@ def load_user_prompt():
     return path.read_text(encoding="utf-8")
 
 
-def get_config():
+def get_thinking_config(include_thoughts):
+    """Get the thinking configuration for the model."""
+    return types.ThinkingConfig(
+        include_thoughts=include_thoughts,
+        thinking_budget=1000,  # maximum number of tokens for thinking
+    )
+
+
+def get_config(include_thoughts=False):
     """Get the configuration for the model."""
 
     sytem_prompt = load_system_prompt()
@@ -50,10 +58,13 @@ def get_config():
     return types.GenerateContentConfig(
         system_instruction=system_instruction,
         max_output_tokens=5000,
-        top_k=2,
-        top_p=0.5,
-        temperature=0.5,
+        top_k=1,
+        top_p=1,
+        temperature=0,
         response_mime_type="application/json",
         # stop_sequences=["<|endoftext|>"],
+        candidate_count=1,  # Generate a single response
+        thinking_config=get_thinking_config(include_thoughts=include_thoughts),
+        # response_json_schema= # for structured output  [JSON Schema](https://json-schema.org/)
         seed=42,
     )
