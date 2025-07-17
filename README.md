@@ -150,7 +150,7 @@ TLDR; 2.5 Flash that's meant for "agentic use cases" is the most vulnerable. Don
 If you use this work in a scientific publication:
 
 ```bibtex
-@misc{promptinjectioncv2024,
+@misc{promptinjectioncv2025,
   author       = {Geevarghese George},
   title        = {prompt-injection-cv},
   year         = {2025},
