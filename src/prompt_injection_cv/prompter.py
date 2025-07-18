@@ -1,12 +1,3 @@
-"""
-response = client.models.generate_content(
-    model=MODEL_ID, prompt='Why is the sky blue?'
-)
-FileAPI to parse pdfs
-file_ref = client.files.upload(file='../assets/cv-latex/alex_smith.pdf')
-file_ref
-"""
-
 from .utils import get_config
 
 
