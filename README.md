@@ -141,7 +141,8 @@ TLDR; 2.5 Flash that's meant for "agentic use cases" is the most vulnerable. Don
 
 ### Limitations
 
-- Synthetic candidate CV's were used 
+- Synthetic candidate CV's were used.
+- LLM-aided CV screening may not use Zero shot methods 
 - The effect on other candidate profiles or more varied injection scenarios was not assessed.
 - The injection relies on hidden instructions embedded as white text. In production settings, extraction pipelines may differ in how (or whether) such content is preserved and passed to the LLM
 - The assessment focuses primarily on score changes and recommendation text.
