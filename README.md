@@ -6,7 +6,10 @@ This is a simplified example for PoC:
 - Tested with `gemini-2.5-flash` with and without thinking
 - Tested with `gemini-2.5-pro` with and without thinking 
 
-The model is instructed (`prompts/system_instruction.md`) to rate the candidate in four dimensions, to identify strengths and concers, and finally a recommendation (Yes/No/Maybe). 
+The model is instructed (`prompts/system_instruction.md`) to rate the candidate in several dimensions, resulting in a score out of 20. Further the model has to identify strengths and concers, and finally provide a recommendation (Yes/No/Maybe) indicating whether they are suited for the job based on the job description (`prompts/user_instruction.md`). 
+
+> TLDR;
+> Gemini 2.5 Flash that's meant for "agentic use cases" is the most vulnerable. Dont try to save your tokens. Keep thinking on.
 
 ### Baseline Evaluation:
 We used the Gemini API to assess a set of synthetic applicant CVs (see `assets/cv-latex/compile.sh` to see generation steps). The prompts are placed in `prompts` directory.
